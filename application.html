@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WeHelp申請</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="application.css" />
+  </head>
+
+  <body>
+    <div class="bg">
+      <img src="背景3.jpg" />
+    </div>
+    <div class="title">WeHelp申請書</div>
+
+
+    <div class="content">
+      <div class="question" id="introBorder">
+        兩百字內的個人簡介。
+        <div  
+          class="triangleUp" 
+          onclick="changeToIntroHere();" 
+          id="introNone"
+        ></div>
+        <div
+          class="triangleDown"
+          onclick="changeToIntroNone();"
+          id="introHere"
+        ></div>
+      </div>
+      <div class="paragraph" id="introPara">
+        大家好，我是何羿勤，今年是大四應屆畢業生，就讀的是語言治療與聽力學系。去年七月開始實習後，我更加了解聽力學產業的工作型態，我發現自己不想成為聽力師，於是開始思考轉換跑道的可能性。今年二月偶然在youtube接觸到網頁開發的教學影片，我試著自學與前端相關的知識，學習的過程中雖然會遇到瓶頸，但是寫程式的成就感帶給我好多快樂，讓我開啟了一條從未思考過的道路，也想要繼續往這條路邁進。
+      </div>
+
+
+
+      <div class="question" id="effortBorder">
+        為了成為軟體工程師，曾做過什麼努力？
+        <div
+          class="triangleUp"
+          onclick="changeToeffortHere();"
+          id="effortNone"
+        ></div>
+        <div
+          class="triangleDown"
+          onclick="changeToeffortNone();"
+          id="effortHere"
+        ></div>
+      </div>
+      <div class="paragraph" id="effortPara">
+        我一開始用Youtube觀看與前端相關的教學影片，彭彭的課程、CSScoke、The Net Ninja、CodingLab這些免費的資源讓我初步認識了網頁運作的基礎。而我最近主要用Udemy學習JavaScript，我會在課後練習對應的coding challenge，還有利用CodeWars思考JS的題目。另外我最近寫了一個簡單的小程式，名字是大樂透隨機號碼產生器，利用JS從1~49中亂數生成6個不重複數字，在寫的過程釐清了一些原本對JS模糊的概念，像是更了解JS如何取得並操作HTML的標籤，對於使用函式、陣列也比較熟悉，以下是程式的CodePen：<a href="https://codepen.io/nljtwfcs-the-decoder/pen/rNZRroM"target="_blank">大樂透隨機號碼產生器</a>
+      </div>
+
+
+
+      <div class="question" id="learningBorder">
+        如果參與這個計劃，會怎麼安排學習時間？
+        <div
+          class="triangleUp"
+          onclick="learningNone();"
+          id="learningNone"
+        ></div>
+        <div
+          class="triangleDown"
+          onclick="learningShow();"
+          id="learningHere"
+        ></div>
+      </div>
+      <div class="paragraph" id="learningPara">
+        我知道沒有程式背景的人每週可能會需要六十小時以上的時間跟上進度，甚至更多，但是我想要離開原本的專業，也有決心踏上轉職這條路，所以這半年會全心投入這個計劃，每天花費十個小時學習與軟體相關的知識，不管需要花費多少學習時間，都希望能夠完成訓練進度甚至是超前預習。
+      </div>
+
+
+
+      <div class="question" id="jobBorder">
+        是否有想要加入的軟體公司？為什麼想加入該公司？
+        <div 
+          class="triangleUp" 
+          onclick="changeToJobHere();" 
+          id="jobNone"
+        ></div>
+        <div
+          class="triangleDown"
+          onclick="changeToJobNone();"
+          id="jobHere"
+        ></div>
+      </div>
+      <div class="paragraph" id="jobPara">
+        在瀏覽104網站時偶然看見均一教育平台在徵軟體工程師，以前在補習班打工的時候會利用均一平台的學習資源備課，我很喜歡均一提倡的教育理念，讓一些在偏鄉的小朋友有更多的學習機會，也透過數據分析讓學生更了解自己的學習狀況，均一的網站很好操作，使用很多圖案或動畫讓介面更清晰易懂，這些都是需要軟體工程師去開發跟維護的，在數位教育發展興盛的時代中，如果能夠利用軟體相關的知識讓學生的使用體驗變好，進而提升他們的學習效率，我覺得是一件很有意義的事情。
+      </div>
+
+      <div class="question" id="difficultBorder">
+        請描述一件讓你產生明顯負面情緒的事情，你如何處理該情緒？
+        <div class="triangleUp" onclick="changeToDifficultHere();" id="difficultNone"></div>
+        <div class="triangleDown" onclick="changeToDifficultNone();" id="difficultHere"></div>
+      </div>
+      <div class="paragraph" id="difficultPara">
+        大三的時候我在補習班當課輔老師，有個小朋友的英文程度不好，但是時間逼近會考，他的家人要求在此次段考得到一定的成績，所以那段時間常常需要開會、準備教材、思考教學方法，上課的時候要利用有趣的模式引導他，在他挫折的時候鼓勵不要放棄，那段時間要擔心他的學習和心理的狀況，也擔心家長對補習的質疑，同時我要準備實習前的技術考試，如果沒有通過就不能去實習，我常常覺得煩躁也好想放棄，我知道這些情緒源自於未完成的代辦事項，所以我會告訴自己「從簡單的開始就好」，就先從改考卷、寫聯絡簿評語、打掃教室這些工作開始，完成這些會讓我覺得自己很棒，事情有所進度後就會逐漸上手然後變得平靜，一天結束後獎勵自己好喝的飲料也會讓我更有動力！
+      </div>
+
+      <div class="question" id="applyBorder">
+        關於這份申請網頁，請分享一個你開發時的心得。
+        <div class="triangleUp" onclick="changeToApplyHere();" id="applyNone"></div>
+        <div class="triangleDown" onclick="changeToApplyNone();" id="applyHere"></div>
+      </div>
+      <div class="paragraph" id="applyPara">
+        在決定參加訓練營的時候，得知要自行寫一份網頁，那時候的我對前端的一切都還很陌生，可是就很想寫出一個按鈕來操作頁面，結果現在的我知道要怎麼做了：）！這段時間的學習讓我可以實現原本不可能的構想，這感覺很棒！另外這個三角形按鈕我原本以為要自己畫好加入網頁，沒想到可以用CSS的屬性border做出來，非常酷！
+      </div>
+
+      <div class="questionUnder" id="questionBorder">
+        其他想要對我們說的事情？
+        <div class="triangleUp" onclick="changeToOtherHere();" id="otherNone"></div>
+        <div class="triangleDown" onclick="changeToOtherNone();" id="otherHere"></div>
+      </div>
+      <div class="paragraph" id="otherPara">
+        想要先感謝彭彭老師在YT上拍攝了很多清晰易懂的教學影片，讓我一開始在建立程式觀念的時候輕鬆了很多：）！現在離訓練營開始還有一段時間，我會繼續利用這段時間努力學習，像是CSS的切版練習，還有前端的框架都是接下來想更熟練的，希望可以順利參加這一屆的BootCamp！
+      </div>
+    </div>
+
+    <script src="application.js"></script>
+  </body>
+</html>
